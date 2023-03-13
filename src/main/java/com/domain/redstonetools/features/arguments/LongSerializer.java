@@ -3,7 +3,7 @@ package com.domain.redstonetools.features.arguments;
 import com.mojang.brigadier.arguments.ArgumentType;
 import com.mojang.brigadier.arguments.LongArgumentType;
 
-public class LongSerializer extends StringBrigadierSerializer<Long> {
+public class LongSerializer extends SimpleBrigadierSerializer<Long> {
 
     private static final LongSerializer INSTANCE = new LongSerializer(LongArgumentType.longArg());
 
@@ -21,11 +21,6 @@ public class LongSerializer extends StringBrigadierSerializer<Long> {
 
     private LongSerializer(ArgumentType<Long> argumentType) {
         super(Long.class, argumentType);
-    }
-
-    @Override
-    public String serialize(Long value) {
-        return String.valueOf(value);
     }
 
 }

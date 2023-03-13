@@ -10,7 +10,7 @@ import static com.domain.redstonetools.features.arguments.StringSerializer.word;
 
 import java.math.BigInteger;
 
-@Feature(name = "Base Convert", description = "Converts a number from one base to another.", command = "base")
+@Feature(id = "base-convert", name = "Base Convert", description = "Converts a number from one base to another.", command = "base")
 public class BaseConvertFeature extends CommandFeature {
     public static final Argument<Integer> fromBase = Argument
             .ofType(integer(2, 36));

@@ -16,7 +16,7 @@ import net.minecraft.server.command.ServerCommandSource;
 
 import java.lang.reflect.Method;
 
-@Feature(name = "Copy State", description = "Gives you a copy of the block you're looking at with its BlockState.", command = "copystate")
+@Feature(id = "copy-state", name = "Copy State", description = "Gives you a copy of the block you're looking at with its BlockState.", command = "copystate")
 public class CopyStateFeature extends PickBlockFeature {
     @Override
     protected Either<ItemStack, Feedback> getItemStack(ServerCommandSource source, BlockInfo blockInfo) {

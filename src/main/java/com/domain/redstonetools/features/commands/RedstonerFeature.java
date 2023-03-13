@@ -9,7 +9,7 @@ import net.minecraft.server.command.ServerCommandSource;
 
 import java.util.List;
 
-@Feature(name = "Redstoner", description = "Sets the gamerules to be more redstone friendly.", command = "redstoner")
+@Feature(id = "redstoner", name = "Redstoner", description = "Sets the gamerules to be more redstone friendly.", command = "redstoner")
 public class RedstonerFeature extends CommandFeature {
     @Override
     protected Feedback execute(ServerCommandSource source) throws CommandSyntaxException {

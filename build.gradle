@@ -46,6 +46,9 @@ dependencies {
 
 	// Worldedit API
 	modImplementation "com.sk89q.worldedit:worldedit-fabric-mc1.18.2:7.2.10"
+
+	// SnakeYAML for configuration
+	modImplementation 'org.yaml:snakeyaml:1.33'
 }
 
 

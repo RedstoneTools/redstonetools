@@ -17,7 +17,7 @@ import static com.domain.redstonetools.RedstoneToolsClient.LOGGER;
 import static com.domain.redstonetools.features.arguments.BoolSerializer.bool;
 import static com.domain.redstonetools.features.arguments.FloatSerializer.floatArg;
 
-@Feature(name = "Quick TP", description = "Teleports you in the direction you are looking.", command = "quicktp")
+@Feature(id = "quick-tp", name = "Quick TP", description = "Teleports you in the direction you are looking.", command = "quicktp")
 public class QuickTpFeature extends CommandFeature {
 
     public static final Argument<Float> distance = Argument

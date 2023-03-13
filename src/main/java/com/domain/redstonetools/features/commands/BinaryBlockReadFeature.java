@@ -16,7 +16,7 @@ import static com.domain.redstonetools.features.arguments.BlockStateArgumentSeri
 import static com.domain.redstonetools.features.arguments.BoolSerializer.bool;
 import static com.domain.redstonetools.features.arguments.IntegerSerializer.integer;
 
-@Feature(name = "Binary Block Read", description = "Interprets your WorldEdit selection as a binary number.", command = "/read")
+@Feature(id = "binary-block-read", name = "Binary Block Read", description = "Interprets your WorldEdit selection as a binary number.", command = "/read")
 public class BinaryBlockReadFeature extends CommandFeature {
     private static final BlockStateArgument LIT_LAMP_ARG = new BlockStateArgument(
             Blocks.REDSTONE_LAMP.getDefaultState().with(RedstoneLampBlock.LIT, true), null, null

@@ -12,6 +12,7 @@ import org.slf4j.LoggerFactory;
 
 
 public class RedstoneToolsClient implements ClientModInitializer {
+
     public static final String MOD_ID = "redstonetools";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
     public static final Injector INJECTOR = Guice.createInjector(ReflectionUtils.getModules());
@@ -31,4 +32,5 @@ public class RedstoneToolsClient implements ClientModInitializer {
             feature.register();
         }
     }
+
 }

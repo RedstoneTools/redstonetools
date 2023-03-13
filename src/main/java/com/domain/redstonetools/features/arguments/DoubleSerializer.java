@@ -3,7 +3,7 @@ package com.domain.redstonetools.features.arguments;
 import com.mojang.brigadier.arguments.ArgumentType;
 import com.mojang.brigadier.arguments.DoubleArgumentType;
 
-public class DoubleSerializer extends StringBrigadierSerializer<Double> {
+public class DoubleSerializer extends SimpleBrigadierSerializer<Double> {
 
     private static final DoubleSerializer INSTANCE = new DoubleSerializer(DoubleArgumentType.doubleArg());
 
@@ -21,11 +21,6 @@ public class DoubleSerializer extends StringBrigadierSerializer<Double> {
 
     private DoubleSerializer(ArgumentType<Double> argumentType) {
         super(Double.class, argumentType);
-    }
-
-    @Override
-    public String serialize(Double value) {
-        return String.valueOf(value);
     }
 
 }

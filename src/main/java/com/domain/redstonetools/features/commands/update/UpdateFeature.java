@@ -7,7 +7,7 @@ import com.domain.redstonetools.utils.WorldEditUtils;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import net.minecraft.server.command.ServerCommandSource;
 
-@Feature(name = "Update", description = "Forces block updates in the selected area.", command = "/update")
+@Feature(id = "update", name = "Update", description = "Forces block updates in the selected area.", command = "/update")
 public class UpdateFeature extends CommandFeature {
 
     @Override

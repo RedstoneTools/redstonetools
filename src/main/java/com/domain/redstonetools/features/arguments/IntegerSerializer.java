@@ -3,7 +3,7 @@ package com.domain.redstonetools.features.arguments;
 import com.mojang.brigadier.arguments.ArgumentType;
 import com.mojang.brigadier.arguments.IntegerArgumentType;
 
-public class IntegerSerializer extends StringBrigadierSerializer<Integer> {
+public class IntegerSerializer extends SimpleBrigadierSerializer<Integer> {
 
     private static final IntegerSerializer INSTANCE = new IntegerSerializer(IntegerArgumentType.integer());
 
@@ -21,11 +21,6 @@ public class IntegerSerializer extends StringBrigadierSerializer<Integer> {
 
     private IntegerSerializer(ArgumentType<Integer> argumentType) {
         super(Integer.class, argumentType);
-    }
-
-    @Override
-    public String serialize(Integer value) {
-        return String.valueOf(value);
     }
 
 }

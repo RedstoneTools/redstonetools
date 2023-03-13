@@ -22,7 +22,7 @@ public abstract class EnumSerializer<T extends Enum<T>>
     // of the enum constants, can be overridden
     @Override
     public String serialize(T value) {
-        return value.toString();
+        return String.valueOf(value);
     }
 
     @Override
